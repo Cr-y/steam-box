@@ -17,10 +17,10 @@ jobs:
     name: Upddate-gist
     runs-on: ubuntu-latest
     env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ Steam_Game.GH_TOKEN }}
           GIST_ID: 2a59e3522db4ddcfad08e4e6a36021cc
-          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-          STEAM_ID: ${{ secrets.STEAM_ID }}
+          STEAM_API_KEY: ${{ Steam_Game.STEAM_API_KEY }}
+          STEAM_ID: ${{ Steam_Game.STEAM_ID }}
     steps:
 
     - name: Set up Go 1.x
